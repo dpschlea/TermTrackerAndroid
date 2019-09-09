@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.termtrackerandroid.CourseEdit"
+    tools:showIn="@layout/a_course_edit">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/gridLayout">
+
+
+        <TextView
+            android:id="@+id/tvCourseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_margin="8dp"
+            android:layout_row="0"
+            android:text="Course Name" />
+
+        <EditText
+            android:id="@+id/editCourseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_margin="8dp"
+            android:layout_row="0"
+            android:ems="10"
+            android:inputType="text"/>
+
+        <TextView
+            android:id="@+id/tvCourseStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_margin="8dp"
+            android:layout_row="1"
+            android:text="Course Start" />
+
+        <EditText
+            android:id="@+id/editCourseStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_margin="8dp"
+            android:layout_row="1"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/tvCourseEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_margin="8dp"
+            android:layout_row="2"
+            android:text="Course End" />
+
+        <EditText
+            android:id="@+id/editCourseEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_margin="8dp"
+            android:layout_row="2"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/tvMentorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_margin="8dp"
+            android:layout_row="3"
+            android:text="Mentor Name" />
+
+        <EditText
+            android:id="@+id/editMentorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_margin="8dp"
+            android:layout_row="3"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/tvMentorPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_margin="8dp"
+            android:layout_row="4"
+            android:text="Mentor Phone Number" />
+
+        <EditText
+            android:id="@+id/editMentorPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_margin="8dp"
+            android:layout_row="4"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/tvMentorEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_margin="8dp"
+            android:layout_row="5"
+            android:text="Mentor Email" />
+
+        <EditText
+            android:id="@+id/editMentorEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_margin="8dp"
+            android:layout_row="5"
+            android:inputType="textWebEmailAddress" />
+
+    </GridLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/button"
+        android:layout_below="@+id/gridLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:onClick="saveCourseChanges" />
+
+
+</RelativeLayout>

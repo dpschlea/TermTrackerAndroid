@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.termtrackerandroid">
+
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Database Provider -->
+        <provider
+            android:name=".DP"
+            android:authorities="com.example.termtrackerandroid.DP"
+            android:exported="false" />
+
+        <!-- Notifications -->
+        <receiver android:name=".Notifications" />
+
+        <!-- Activities -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_main"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TermList"
+            android:label="@string/term_list"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.termtrackerandroid.MainActivity" />
+        </activity>
+        <activity
+            android:name=".TermView"
+            android:label="@string/term_view"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.termtrackerandroid.TermList" />
+        </activity>
+        <activity
+            android:name=".TermEdit"
+            android:label="@string/term_edit"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.termtrackerandroid.TermView" />
+        </activity>
+        <activity
+            android:name=".CourseList"
+            android:label="@string/course_list"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.termtrackerandroid.TermView" />
+        </activity>
+        <activity
+            android:name=".CourseView"
+            android:label="@string/course_view"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.termtrackerandroid.CourseList" />
+        </activity>
+        <activity
+            android:name=".CourseEdit"
+            android:label="@string/course_edit"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.termtrackerandroid.CourseView" />
+        </activity>
+        <activity
+            android:name=".CourseNoteList"
+            android:label="@string/course_note_list"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.termtrackerandroid.CourseView" />
+        </activity>
+        <activity
+            android:name=".AssessList"
+            android:label="@string/assess_list"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.termtrackerandroid.CourseView" />
+        </activity>
+        <activity
+            android:name=".AssessView"
+            android:label="@string/assess_view"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.termtrackerandroid.AssessList" />
+        </activity>
+        <activity
+            android:name=".CourseNoteView"
+            android:label="@string/course_note_view"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.termtrackerandroid.CourseNoteList" />
+        </activity>
+        <activity
+            android:name=".AssessNoteList"
+            android:label="@string/assess_note_list"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.termtrackerandroid.AssessView" />
+        </activity>
+        <activity
+            android:name=".AssessNoteView"
+            android:label="@string/assess_note_view"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.termtrackerandroid.AssessNoteList" />
+        </activity>
+        <activity
+            android:name=".AssessEdit"
+            android:label="@string/assess_edit"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.termtrackerandroid.AssessView" />
+        </activity>
+        <activity
+            android:name=".CourseNoteEdit"
+            android:label="@string/course_note_edit"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.termtrackerandroid.CourseNoteList" />
+        </activity>
+        <activity
+            android:name=".AssessNoteEdit"
+            android:label="@string/assess_note_edit"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.termtrackerandroid.AssessNoteList" />
+        </activity>
+    </application>
+
+</manifest>

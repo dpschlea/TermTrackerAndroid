@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.termtrackerandroid.MainActivity">
+    <item
+        android:id="@+id/act_delete_all_terms"
+        android:orderInCategory="101"
+        android:title="Delete All Terms"
+        app:showAsAction="never" />
+</menu>

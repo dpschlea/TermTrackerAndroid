@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Term Tracker Android</string>
+    <string name="action_settings">Settings</string>
+    <string name="note_delete">Note Deleted</string>
+    <string name="course_delete">Course Deleted</string>
+    <string name="no_active_term">No Active Term</string>
+    <string name="updated">Updated</string>
+    <string name="all_delete">All deleted</string>
+    <string name="activate_term">Term Activated</string>
+    <string name="delete_term">Term deleted</string>
+    <string name="contains_courses">Term still contains courses</string>
+    <string name="item_delete">Deleted</string>
+    <string name="item_saved">Saved</string>
+    <string name="title_main">Tracker for WGU</string>
+    <string name="term_list">Term List</string>
+    <string name="term_view">Term View</string>
+    <string name="term_edit">Term Edit</string>
+    <string name="course_list">Course List</string>
+    <string name="course_view">Course View</string>
+    <string name="course_edit">Course Edit</string>
+    <string name="course_note_list">Course Notes</string>
+    <string name="assess_list">Assessments</string>
+    <string name="assess_view">Assessments</string>
+    <string name="course_note_view">Couse Notes</string>
+    <string name="assess_note_list">Assessment Notes</string>
+    <string name="assess_note_view">Assessment Notes</string>
+    <string name="assess_edit">Edit Assessment</string>
+    <string name="course_note_edit">Edit Note</string>
+    <string name="assess_note_edit">Edit Note</string>
+</resources>

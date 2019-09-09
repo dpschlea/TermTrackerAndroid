@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.termtrackerandroid.CourseView">
+    <item
+        android:id="@+id/act_edit_course"
+        android:orderInCategory="99"
+        android:title="Course - Edit"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/act_delete_course"
+        android:orderInCategory="100"
+        android:title="Course - Delete"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/act_enable_notifications"
+        android:orderInCategory="101"
+        android:title="Enable Notifications"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/act_disable_notifications"
+        android:orderInCategory="102"
+        android:title="Disable Notifications"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/act_start_course"
+        android:orderInCategory="103"
+        android:title="Course - Start"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/act_mark_course_completed"
+        android:orderInCategory="104"
+        android:title="Course - Completed"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/act_drop_course"
+        android:orderInCategory="105"
+        android:title="Course - Drop"
+        app:showAsAction="never" />
+
+</menu>

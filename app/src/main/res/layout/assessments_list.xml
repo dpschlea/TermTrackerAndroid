@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/assessIcon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/assess_icon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toEndOf="@+id/assessIcon"
+        android:layout_toRightOf="@+id/assessIcon">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/linearLayout"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/assessIcon">
+
+            <TextView
+                android:id="@+id/tvAssessCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="8dp"
+                android:text="C196"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="8dp"
+                android:text=": "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvAssessName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Placeholder Assessment"
+                android:textColor="@color/list_text"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:text="2000-01-01 12:00:00"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvAssessDT" />
+    </LinearLayout>
+
+</RelativeLayout>
